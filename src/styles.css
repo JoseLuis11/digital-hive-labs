@@ -1,3 +1,9 @@
+.mySlides{
+    max-width:100%;
+    max-height:100%;
+    position: relative;
+}
+
 /* W3.CSS 4.05 October 2017 by Jan Egil and Borge Refsnes */
 html {
     box-sizing: border-box

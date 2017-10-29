@@ -1,32 +1,38 @@
-<h2 class="w3-center">Manual Slideshow</h2>
+<h2 class="w3-center">{{title}}</h2>
 
-<div class="w3-content w3-card w3-display-container" style="width:50%">
-  <img class="mySlides" src="../assets/img/screenshots/ss1.jpg" style="width:100%">
-  <img class="mySlides" src="../assets/img/screenshots/ss2.jpg" style="width:100%">
-  <img class="mySlides" src="../assets/img/screenshots/ss3.jpg" style="width:100%">
-  <img class="mySlides" src="../assets/img/screenshots/ss4.jpg" style="width:100%">
+<div class="w3-container">
+  <!-- Container (Contact Section) -->
+  <div class="w3-content w3-container" id="contact">
 
-  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    <div class="w3-row w3-section">
+      <div class="w3-col m4 w3-container">
+        
+          <div class="w3-content w3-display-container" style="max-width:800px">
+              <img class="mySlides" src="../assets/img/screenshots/ss1.jpg" style="width:100%">
+              <img class="mySlides" src="../assets/img/screenshots/ss2.jpg" style="width:100%">
+              <img class="mySlides" src="../assets/img/screenshots/ss3.jpg" style="width:100%">
+              <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-middle" style="width:100%">
+                <button class="w3-display-left w3-button w3-black w3-hover-text-blue" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-display-right  w3-button  w3-black w3-hover-text-blue" onclick="plusDivs(1)">&#10095;</button>
+              </div>
+            </div>
+        
+        <!-- Add Google Maps -->
+      </div>
+      <div class="w3-col m8 w3-panel">
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis molestie lorem libero, ut volutpat augue rhoncus dapibus. Duis
+          mattis metus leo, a pulvinar sapien consequat a. Duis fringilla dui quis augue consequat rutrum. Pellentesque habitant
+          morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent faucibus eget odio sed aliquet.
+          Morbi ultrices hendrerit est in mattis. Curabitur mauris quam, gravida ac pharetra nec, placerat sed sapien. Aenean
+          consequat tellus at maximus gravida. Nam vel ligula vitae est mollis feugiat ac fringilla elit. Donec sit amet
+          cursus odio. Etiam imperdiet a leo eu molestie. Donec ut sagittis sapien. Nulla pellentesque rutrum quam, eu sagittis
+          sem porttitor interdum.
+        </p>
+
+      </div>
+    </div>
+  </div>
+  
 </div>
-
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-</script>
-
