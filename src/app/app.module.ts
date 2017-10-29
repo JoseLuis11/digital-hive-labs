@@ -2,6 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
+//routes
+import { app_routing } from './app.routes';
+
 //angularfie
 import { AngularFireModule } from 'angularfire2';
 import { environment } from '../environments/environment';
@@ -25,7 +28,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
   imports: [
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    app_routing
   ],
   providers: [],
   bootstrap: [AppComponent]
