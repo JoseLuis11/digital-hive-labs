@@ -1,7 +1,11 @@
 <div class="w3-bar w3-black w3-padding-16">
-  <a href="#" class="w3-bar-item w3-button w3-mobile">Home</a>
-  <a href="#" class="w3-bar-item w3-button w3-mobile">About us</a>
-  <a href="#" class="w3-bar-item w3-button w3-mobile">Portfolio</a>
-  <a href="#" class="w3-bar-item w3-button w3-mobile">Services</a>
-  <a href="#" class="w3-bar-item w3-button w3-mobile">Contact us</a>
+  <a [routerLink]="['home']" class="w3-bar-item w3-button w3-mobile">Home</a>
+  <a [routerLink]="['about-us']" class="w3-bar-item w3-button w3-mobile">About us</a>
+  <a [routerLink]="['portfolio']" class="w3-bar-item w3-button w3-mobile">Portfolio</a>
+  <a [routerLink]="['services']" class="w3-bar-item w3-button w3-mobile">Services</a>
+  <a [routerLink]="['contact-us']" class="w3-bar-item w3-button w3-mobile">Contact us</a>
 </div>
+
+
+
+<router-outlet></router-outlet>
